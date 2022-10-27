@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.11.0 enthält eine neue Verbesserung. 
+---
+= Was ist neu in Cloud Volumes ONTAP 9.11.0
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.11.0 enthält eine neue Verbesserung.
+
+Zusätzliche Funktionen und Verbesserungen sind auch in den neuesten Versionen von Cloud Manager eingeführt. Siehe https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Versionshinweise Zu Cloud Manager"^] Entsprechende Details.
+
+
+
+== c4-, m4- und r4-Instanzen werden nicht mehr unterstützt (28. Oktober 2022)
+
+In AWS werden die Instanztypen c4, m4 und r4 EC2 nicht mehr mit Cloud Volumes ONTAP unterstützt. Wenn Sie ein System besitzen, das auf einem Instanztyp c4, m4 oder r4 ausgeführt wird, müssen Sie in der instanzfamilie c5, m5 oder r5 zu einem Instanztyp wechseln.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Erfahren Sie, wie Sie den EC2 Instanztyp für Cloud Volumes ONTAP ändern"^].
+
+Siehe link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["NetApp Support"^] Hier erhalten Sie weitere Informationen über das Ende der Verfügbarkeit und die Unterstützung dieser Instanztypen.
+
+
+
+== Unterstützung von Elastic Volumes (7. Juni 2022)
+
+Die Unterstützung der Elastic Volumes von Amazon EBS mit einem Cloud Volumes ONTAP Aggregat bietet eine bessere Performance und zusätzliche Kapazität, und Cloud Manager kann die zugrunde liegende Festplattenkapazität nach Bedarf automatisch erhöhen.
+
+Unterstützung für Elastic Volumes ist ab Version 3.9.19 des Cloud Manager Connectors verfügbar und wird mit spezifischen Cloud Volumes ONTAP Versionen und spezifischen EBS Festplattentypen unterstützt.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Erfahren Sie mehr über den Support für Elastic Volumes"^]
+
+
+
+== 9.11.0 P1 (2. Mai 2022)
+
+Das Release Cloud Volumes ONTAP 9.11.0 P1 ist nun in AWS, Azure und Google Cloud verfügbar. Diese Version umfasst die folgenden Verbesserungen.
+
+
+
+=== Unterstützung von ONTAP S3 in AWS
+
+Sie können jetzt S3-Objekt-Storage von Cloud Volumes ONTAP in AWS zur Verfügung stellen (Microsoft Azure wird bereits unterstützt). Cloud Volumes ONTAP unterstützt S3 als Option für Scale-out-Storage neben klassischen dateibasierten Protokollen wie NFS und SMB.
+
+Beachten Sie Folgendes:
+
+* Der Hauptanwendungsfall für ONTAP S3 mit Cloud Volumes ONTAP ist ein allgemeiner Objektspeicher.
+* Derzeit wird das S3-Protokoll in Cloud Volumes ONTAP in der Google Cloud nicht unterstützt.
+* Cloud Manager bietet keine Managementfunktionen für die ONTAP S3 Funktion.
+
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Lesen Sie, wie Sie S3-Objekt-Storage-Services in ONTAP konfigurieren und managen"^].
+
+
+
+== Upgrade-Hinweise
+
+Lesen Sie diese Hinweise, um mehr über das Upgrade auf diese Version zu erfahren.
+
+
+
+=== Upgrade-Tipps
+
+Upgrades von Cloud Volumes ONTAP müssen von Cloud Manager abgeschlossen werden. Sie sollten kein Cloud Volumes ONTAP-Upgrade mit System Manager oder der CLI durchführen. Dies kann die Stabilität des Systems beeinträchtigen.
+
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Informieren Sie sich, wie ein Upgrade durchgeführt wird, wenn Cloud Manager Sie benachrichtigt"^].
+
+
+
+=== Unterstützter Upgrade-Pfad
+
+Sie können ein Upgrade von Version 9.10.1 auf Cloud Volumes ONTAP 9.11.0 durchführen. Cloud Manager fordert Sie auf, qualifizierte Cloud Volumes ONTAP Systeme auf diese Version zu aktualisieren.
+
+
+
+=== Erforderliche Version des Connectors
+
+Der Cloud Manager Connector muss Version 3.9.18 oder höher ausführen, um ein Upgrade auf vorhandene Systeme auf 9.11.0 durchzuführen.
+
+
+TIP: Automatische Upgrades des Connectors sind standardmäßig aktiviert, sodass Sie die neueste Version verwenden sollten.
+
+
+
+=== Ausfallzeit
+
+* Das Upgrade eines einzelnen Node-Systems nimmt das System für bis zu 25 Minuten offline, während dieser I/O-Unterbrechung erfolgt.
+* Das Upgrade eines HA-Paars erfolgt unterbrechungsfrei und die I/O wird unterbrochen. Während dieses unterbrechungsfreien Upgrade-Prozesses wird jeder Node entsprechend aktualisiert, um den I/O-Datenverkehr für die Clients weiterhin bereitzustellen.
+
