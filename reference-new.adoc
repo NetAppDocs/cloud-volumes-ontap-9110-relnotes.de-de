@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.11.0 enthält eine neue Verbesserung.
 [role="lead"]
 Cloud Volumes ONTAP 9.11.0 enthält eine neue Verbesserung.
 
-Zusätzliche Funktionen und Verbesserungen sind auch in den neuesten Versionen von Cloud Manager eingeführt. Siehe https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Versionshinweise Zu Cloud Manager"^] Entsprechende Details.
+Zusätzliche Funktionen und Erweiterungen sind ebenfalls in den neuesten Versionen von BlueXP verfügbar. Siehe https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Versionshinweise zu BlueXP"^] Entsprechende Details.
 
 
 
@@ -32,9 +32,9 @@ Siehe link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["N
 
 == Unterstützung von Elastic Volumes (7. Juni 2022)
 
-Die Unterstützung der Elastic Volumes von Amazon EBS mit einem Cloud Volumes ONTAP Aggregat bietet eine bessere Performance und zusätzliche Kapazität, und Cloud Manager kann die zugrunde liegende Festplattenkapazität nach Bedarf automatisch erhöhen.
+Die Unterstützung der Elastic Volumes von Amazon EBS mit einem Cloud Volumes ONTAP Aggregat bietet eine bessere Performance und zusätzliche Kapazität, während BlueXP die zugrunde liegende Festplattenkapazität nach Bedarf automatisch erhöht.
 
-Unterstützung für Elastic Volumes ist ab Version 3.9.19 des Cloud Manager Connectors verfügbar und wird mit spezifischen Cloud Volumes ONTAP Versionen und spezifischen EBS Festplattentypen unterstützt.
+Unterstützung für elastische Volumes ist ab Version 3.9.19 des BlueXP Connectors verfügbar und wird mit spezifischen Cloud Volumes ONTAP Versionen und spezifischen EBS-Festplattentypen unterstützt.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Erfahren Sie mehr über den Support für Elastic Volumes"^]
 
@@ -54,7 +54,7 @@ Beachten Sie Folgendes:
 
 * Der Hauptanwendungsfall für ONTAP S3 mit Cloud Volumes ONTAP ist ein allgemeiner Objektspeicher.
 * Derzeit wird das S3-Protokoll in Cloud Volumes ONTAP in der Google Cloud nicht unterstützt.
-* Cloud Manager bietet keine Managementfunktionen für die ONTAP S3 Funktion.
+* BlueXP bietet keine Managementfunktionen für die ONTAP S3 Funktion.
 
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Lesen Sie, wie Sie S3-Objekt-Storage-Services in ONTAP konfigurieren und managen"^].
@@ -69,21 +69,21 @@ Lesen Sie diese Hinweise, um mehr über das Upgrade auf diese Version zu erfahre
 
 === Upgrade-Tipps
 
-Upgrades von Cloud Volumes ONTAP müssen von Cloud Manager abgeschlossen werden. Sie sollten kein Cloud Volumes ONTAP-Upgrade mit System Manager oder der CLI durchführen. Dies kann die Stabilität des Systems beeinträchtigen.
+Upgrades von Cloud Volumes ONTAP müssen von BlueXP abgeschlossen werden. Sie sollten kein Cloud Volumes ONTAP-Upgrade mit System Manager oder der CLI durchführen. Dies kann die Stabilität des Systems beeinträchtigen.
 
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Informieren Sie sich, wie ein Upgrade durchgeführt wird, wenn Cloud Manager Sie benachrichtigt"^].
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Erfahren Sie, wie Sie aktualisiert werden können, wenn Sie von BlueXP benachrichtigt werden"^].
 
 
 
 === Unterstützter Upgrade-Pfad
 
-Sie können ein Upgrade von Version 9.10.1 auf Cloud Volumes ONTAP 9.11.0 durchführen. Cloud Manager fordert Sie auf, qualifizierte Cloud Volumes ONTAP Systeme auf diese Version zu aktualisieren.
+Sie können ein Upgrade von Version 9.10.1 auf Cloud Volumes ONTAP 9.11.0 durchführen. Unter BlueXP werden Sie aufgefordert, qualifizierte Cloud Volumes ONTAP-Systeme auf diese Version zu aktualisieren.
 
 
 
 === Erforderliche Version des Connectors
 
-Der Cloud Manager Connector muss Version 3.9.18 oder höher ausführen, um ein Upgrade auf vorhandene Systeme auf 9.11.0 durchzuführen.
+Der BlueXP Connector muss Version 3.9.18 oder höher ausführen, um die vorhandenen Systeme auf 9.11.0 zu aktualisieren.
 
 
 TIP: Automatische Upgrades des Connectors sind standardmäßig aktiviert, sodass Sie die neueste Version verwenden sollten.
