@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.11.0 enthält eine neue Verbesserung.
 [role="lead"]
 Cloud Volumes ONTAP 9.11.0 enthält eine neue Verbesserung.
 
-Zusätzliche Funktionen und Erweiterungen sind ebenfalls in den neuesten Versionen von BlueXP verfügbar. Siehe https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Versionshinweise zu BlueXP"^] Entsprechende Details.
+Zusätzliche Funktionen und Erweiterungen sind ebenfalls in den neuesten Versionen von BlueXP verfügbar. Siehe https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Versionshinweise zu BlueXP"^] Entsprechende Details.
 
 
 
@@ -24,7 +24,7 @@ Zusätzliche Funktionen und Erweiterungen sind ebenfalls in den neuesten Version
 
 In AWS werden die Instanztypen c4, m4 und r4 EC2 nicht mehr mit Cloud Volumes ONTAP unterstützt. Wenn Sie ein System besitzen, das auf einem Instanztyp c4, m4 oder r4 ausgeführt wird, müssen Sie in der instanzfamilie c5, m5 oder r5 zu einem Instanztyp wechseln.
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Erfahren Sie, wie Sie den EC2 Instanztyp für Cloud Volumes ONTAP ändern"^].
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Erfahren Sie, wie Sie den EC2 Instanztyp für Cloud Volumes ONTAP ändern"^].
 
 Siehe link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["NetApp Support"^] Hier erhalten Sie weitere Informationen über das Ende der Verfügbarkeit und die Unterstützung dieser Instanztypen.
 
@@ -36,7 +36,7 @@ Die Unterstützung der Elastic Volumes von Amazon EBS mit einem Cloud Volumes ON
 
 Unterstützung für elastische Volumes ist ab Version 3.9.19 des BlueXP Connectors verfügbar und wird mit spezifischen Cloud Volumes ONTAP Versionen und spezifischen EBS-Festplattentypen unterstützt.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Erfahren Sie mehr über den Support für Elastic Volumes"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Erfahren Sie mehr über den Support für Elastic Volumes"^]
 
 
 
@@ -71,7 +71,7 @@ Lesen Sie diese Hinweise, um mehr über das Upgrade auf diese Version zu erfahre
 
 Upgrades von Cloud Volumes ONTAP müssen von BlueXP abgeschlossen werden. Sie sollten kein Cloud Volumes ONTAP-Upgrade mit System Manager oder der CLI durchführen. Dies kann die Stabilität des Systems beeinträchtigen.
 
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Erfahren Sie, wie Sie aktualisiert werden können, wenn Sie von BlueXP benachrichtigt werden"^].
+http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Erfahren Sie, wie Sie aktualisiert werden können, wenn Sie von BlueXP benachrichtigt werden"^].
 
 
 
