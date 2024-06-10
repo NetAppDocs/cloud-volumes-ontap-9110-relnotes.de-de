@@ -592,8 +592,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp Community</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central Blog</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Cloud-Webinare</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP Cloud</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">Gibt es bei einem HA-Paar das Limit für lizenzierte Kapazität pro Node oder für das gesamte HA-Paar?</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">Werden bei einem HA-Paar die gespiegelten Daten an das lizenzierte Kapazitätslimit gezählt?</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">Es sollten keine automatischen Lösungen für die Verwaltung von Anwendungsressourcen verwendet werden</block>
@@ -620,7 +618,6 @@
   <block id="5eaf873931f55b8762ee767f05a1cd4c" category="paragraph">Der BlueXP Connector muss Version 3.9.18 oder höher ausführen, um die vorhandenen Systeme auf 9.11.0 zu aktualisieren.</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API-Endpunkte</block>
   <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">Nein, das tut es nicht. Die Daten in einem HA-Paar werden zwischen den Nodes synchron gespiegelt, sodass sie bei einem Ausfall in Google Cloud verfügbar sind. Wenn Sie beispielsweise eine 8-TB-Festplatte auf Node A erwerben, weist BlueXP auf Node B auch eine 8-TB-Festplatte zu, die für gespiegelte Daten verwendet wird. Während 16 TB Kapazität bereitgestellt wurde, zählt nur 8 TB für das Lizenzlimit.</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Alle BlueXP-Dokumentationen</block>
   <block id="12964005c5d7e3005a6efbac919f2869" category="paragraph">Wenn Sie nutzen<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Innerhalb der VPC, in der Cloud Volumes ONTAP implementiert wird, müssen DNS-Datensätze implementiert werden, die den Datenverkehr an die erforderlich weiterleiten<block ref="f6959d0a2d8478df824c26fa5d8f2e95" category="inline-link-rx"></block>.</block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">Bei einigen Konfigurationen verhindern Festplattenbeschränkungen, dass Sie durch die Verwendung von Festplatten allein das Kapazitätslimit nicht erreichen. In solchen Fällen wird die Kapazitätsgrenze von erreicht<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. Weitere Informationen zu Festplattenlimits finden Sie unter <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
   <block id="ca40429b1b07555a35de829b976a6961" category="paragraph">In AWS kann ein Aggregat bis zu 6 Festplatten enthalten, die jeweils gleich groß sind. Wenn Sie aber eine Konfiguration haben, die die Amazon EBS Elastic Volumes Funktion unterstützt, kann ein Aggregat bis zu 8 Festplatten enthalten.<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
@@ -662,4 +659,5 @@ Die eine Datenservice-SVM umfasst das gesamte Cloud Volumes ONTAP System (HA-Paa
   <block id="e1ec06a3bd4a559443a88f1cb6736c26" category="inline-link-macro">Erfahren Sie, wie Sie ein Upgrade in AWS mit EC2-Instanztypen c4, m4 und R4 durchführen</block>
   <block id="f295c0f45a8e22a4e4db9141680cce76" category="paragraph"><block ref="0fa12a627192b6cd097b12cd8088afe0" category="inline-link-macro-rx"></block>.
 <block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
+  <block id="635b8666b75aa41cbb414efb1a4e8850" category="sidebar">In diesen Versionshinweisen werden neue Funktionen, Einschränkungen und bekannte Probleme von Cloud Volumes ONTAP 9.11 beschrieben.</block>
 </blocks>
